@@ -1,0 +1,30 @@
+BIOS: Basic Input/Output System. The computer’s BIOS contains programs stored on a flash memory chip.
+The BIOS initializes the systems and loads the operating system.
+CNA: Converged Network Adapter. A NIC that provides both general networking and HBA capabilities for
+protocols such as iSCSI or FCoE.
+FCoE: Fibre Channel over Ethernet. A network protocol that uses Ethernet physical interfaces and framing
+to convey Fibre Channel messages.
+GRUB: Erich Boleyn’s ‘GRand Unified Bootloader’ for Linux. A bootstrap application used in many Linux
+distributions.
+HBA: Host Bus Adapter. A device that connects a systems host bus (for example a PCIe slot) to SCSI, Fibre
+Channel, or a similar medium.
+iSCSI: A protocol to carry SCSI disk commands over TCP/IP.
+Legacy BIOS: The de facto 16-bit interface between the OS and the platform firmware. It is based upon
+the original PC BIOS.
+LOM: LAN on Motherboard. Network interfaces that are integrated directly into the systems motherboard,
+as opposed to a plug-in NIC.
+NDC: Network Daughter Card. Network interfaces that exist on a daughter card as opposed to being
+integrated directly into the motherboard or added using a plug-in NIC. Many PowerEdge servers use a
+NDC instead of integrating the LAN support into the motherboard (see LOM).
+NIC: Network Interface Card. Typically a plug-in PCIe network adapter, but may also refer to NDC or
+LOM’s.
+POST: Power-On Self-Test. When the computer is turned on, the POST tests various system components,
+such as RAM, the hard-disk drives, and the keyboard. POST is synonymous with the BIOS's startup process.
+PXE: Preboot eXecution Environment. A specification that allows booting from the network by identifying
+and then downloading the correct boot image for a system.
+UEFI: Unified Extensible Firmware Interface. An industry standard specification that defines a software
+interface between an operating system and platform firmware. UEFI is replacing Legacy BIOS as the
+software interface to the OS.
+VLAN: Virtual Local Area Network. A technology that uses IEEE 802.1Q tagging to identify packets on a
+single physical connection as belonging to separate virtual networks.
+WDS NBP: Windows Deployment Services Network Bootstrap Program
