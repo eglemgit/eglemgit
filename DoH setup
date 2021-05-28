@@ -1,0 +1,24 @@
+APACHE SETTINGS
+
+*****
+doh-client.conf 
+*****
+SSLProtocol TLSv1.2
+SSLHonorCipherOrder On
+SSLCipherSuite ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+3DES:!aNULL:!MD5:!DSS:!eNULL:!EXP:!LOW:!MD5
+SSLUseStapling on
+SSLStaplingCache shmcb:/var/lib/apache2/stapling_cache(512000)
+
+<VirtualHost *:443>
+    ServerName MY_SERVER_NAME
+    Protocols h2 http/1.1
+    ProxyPass /dns-query http://[::1]:8053/dns-query
+    ProxyPassReverse /dns-query http://[::1]:8053/dns-query
+</VirtualHost>
+
+
+dnsmasq + https-dns-proxy
+https://openwrt.org/docs/guide-user/services/dns/doh_dnsmasq_https-dns-proxy
+
+
+---> luci-app-https-dns-proxy app for configure 
