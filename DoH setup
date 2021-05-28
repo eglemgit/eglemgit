@@ -22,3 +22,11 @@ https://openwrt.org/docs/guide-user/services/dns/doh_dnsmasq_https-dns-proxy
 
 
 ---> luci-app-https-dns-proxy app for configure 
+
+
+https://github.com/aarond10/https_dns_proxy --> get package
+
+% apt-get install cmake libc-ares-dev libcurl4-openssl-dev libev-dev build-essential
+%  unzip https_dns_proxy.zip
+% cmake . 
+% make 
